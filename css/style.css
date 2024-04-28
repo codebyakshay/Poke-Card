@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+    margin: 0;
+    background-image: linear-gradient(90deg, #0a326d, #004d7a, #008793, #00bf72, #a8eb12);
+    scroll-behavior: smooth;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    gap: 8pxpx;
+    margin-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+.item {
+    width: 205px;
+    height: 300px;
+    background-color: aliceblue;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+
+}
+
+.item img {
+    width: 180px;
+    height: 180px;
+    padding: 2px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* This makes sure the header stretches across the full width */
+    z-index: 1000; /* This ensures the navbar stays on top of other content */
+}
+
+.nav {
+    background-color: #bf7300;
+    height: 50px;
+    width: 100%;  /* Makes sure the nav bar takes up the full width of the header */
+    display: flex; /* Using flex to center-align the content and manage spacing */
+    align-items: center; /* Vertically centers the content within the navbar */
+    justify-content: center; /* Horizontally centers the content within the navbar */
+}
+
+.nav p {
+    margin: 0; /* Removes default margin from the paragraph, if any */
+    padding: 10px;
+    text-align: center;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 00;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 50px;
+    
+}
+.pokicard span {
+    font-size: 0.8em;
+}
+
+.info .number,
+.info .name,
+.info .type {
+    display: block;  /* Forces each element to start on a new line */
+    text-align: center;
+    margin: 2px;
+    font-size: 30px;
+}
+
+.info .number {
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+    font-size: 18px; /* Larger font size */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2px 5px; /* Padding around the text: vertical | horizontal */
+    display: inline-block; /* Ensures the span takes padding and border-radius properly */
+}
+
+.info .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+    
+}
+.info .type {
+    font-size: 15px;
+}
